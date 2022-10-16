@@ -1,0 +1,8 @@
+<wj-flex-grid-search [placeholder]="'FlexGridSearch'" [grid]="grid">
+</wj-flex-grid-search>
+<wj-flex-grid #grid [itemsSource]="data" (initialized)="initGrid(grid)">
+  <wj-flex-grid-column binding="id"></wj-flex-grid-column>
+  <wj-flex-grid-column binding="country"></wj-flex-grid-column>
+  <wj-flex-grid-column binding="product"></wj-flex-grid-column>
+  <!-- <wj-flex-grid-column binding="sales"></wj-flex-grid-column> -->
+</wj-flex-grid>
